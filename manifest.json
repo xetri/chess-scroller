@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Chess Scroll",
+  "version": "1.0",
+  "description": "Navigate through chess moves using mouse scroll",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.chess.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["content.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
