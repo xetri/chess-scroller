@@ -21,7 +21,7 @@ var isBoardActive = false
 // Event listener to capture mouse wheel scroll
 window.addEventListener('wheel', function (event) {
     if (!board) {
-        board = document.querySelector("#board-single")
+        board = document.querySelector("wc-chess-board")
 
         board.addEventListener("mouseenter", function(e) {
             isBoardActive = true
